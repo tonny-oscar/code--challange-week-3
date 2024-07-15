@@ -1,3 +1,7 @@
 ul#films {
  color: red   
 }
+div {
+    background-color: lightblue;
+    padding-right: 15%;
+  }
