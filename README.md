@@ -6,4 +6,15 @@ Project Title: Flatiron Movie Theater
 *Add the tailwind cdn link
 *link the css with html
 
+use npm install -g json-server
+and json-server --watch db.json
+
+this comand is to host on a locall server hence the list of all available movies will be displayed on the left part of the screen
+*fetch ("http://localhost:3000/films")
+
+fetch the db.json file to index.json
+then use the for each function to 
+
+
+
 
