@@ -1,5 +1,3 @@
-
-
 fetch ("http://localhost:3000/films")
 .then(response => response.json())
 .then(films => {
@@ -9,28 +7,15 @@ fetch ("http://localhost:3000/films")
   main.appendChild(title);
 });
 })
-const main = document.getElementById('main') 
-const buyTicketsButton = document.getElementById('buyTicketsButton');
 
-function myFunction(){
-  var x =document.getElementById("mySpan");
-  document.getElementById("demo").innerHTML = x;
+let capacity= 30;
+let tickets_sold= 27;
+document.getElementById("buyTickets").addEventListener("click", function() {
+  myFunction(capacity, tickets_sold);
+});
+
+function myFunction(a, b) {
+  document.getElementById("demo").innerHTML = a - b;
 }
 
-function availableTickets(){
-  const capacity = "capacity";
-  const tickets_sold = "tickets_sold";
-  const availableTickets = capacity - tickets_sold;
-  return availableTickets;
-}
-
-function buyTickets() {
-  const availableTickets = availableTickets();
-  if (availableTickets > 0) {
-    console.log("Buying 1 ticket!");
-  } else {
-    console.log("No tickets available!");
-    }
-}
-
-buyTicketsButton.addEventListener('click', buyTickets);
+buyTicketsButton.addEventListener('click', buyTicket);
