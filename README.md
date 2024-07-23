@@ -15,6 +15,9 @@ this comand is to host on a locall server hence the list of all available movies
 fetch the db.json file to index.json
 then use the for each function to 
 
+*run to the local server for it to display other movies and tickets available
+
+
 
 
 
